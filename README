@@ -1,0 +1,1 @@
+I needed a thread-safe version of robotparser. Should hopefully work as a drop-in replacement.
