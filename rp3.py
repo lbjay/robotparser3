@@ -64,7 +64,8 @@ class RobotFileParser:
         elif self.status_code >= 400:
             self.allow_all = True
         elif self.status_code == 200 and content:
-            self.parse(content)
+            lines = content.split("\n")
+            self.parse(lines)
 
     def _add_entry(self, entry):
         if "*" in entry.useragents:
